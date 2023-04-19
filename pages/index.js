@@ -3,6 +3,7 @@ import Topheader from "@/components/Topheader";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Mission from "@/components/Mission";
+import Slider from "@/components/Slider";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <Topheader />
       <Navbar />
+      <Slider />
       <Mission />
     </>
   );
