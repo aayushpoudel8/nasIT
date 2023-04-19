@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
-import Eventcard from './Eventcard';
+import React, { useRef } from "react";
+import Eventcard from "./Eventcard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,19 +11,17 @@ const Event = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
-    
     <div>
       <div className="px-[20px]  xl:px-[142px] py-[60px] ">
         <div className="header flex justify-between items-center">
           <div className="text-2xl md:text-3xl flex justify-start flex-col items-start mb-6">
             <div className="mb-3">
-              <span className=" font-bold bg-[#DD0C39] text-white px-4 p-2">Events</span>
-              <span className=" font-bold  mx-4">
-                News
+              <span className=" font-bold bg-[#DD0C39] text-white px-4 p-2">
+                Events
               </span>
+              <span className=" font-bold  mx-4">News</span>
             </div>
-            </div>
-          
+          </div>
         </div>
         <Swiper
           onBeforeInit={(swiper) => {
@@ -64,9 +62,8 @@ const Event = () => {
           modules={[Navigation]}
         >
           <div className="blogcontent grid grid-cols-12 gap-6">
-        
-                <SwiperSlide >
-                <Eventcard
+            <SwiperSlide>
+              <Eventcard
                 img="/../public/images/Image.png"
                 title="UX review presentations"
                 author="Olivia Rhye "
@@ -74,11 +71,10 @@ const Event = () => {
                 desc="{
                   How do you create compelling presentations that wow your colleagues and impress your managers?
                 "
-                
               />
-                </SwiperSlide>
-                <SwiperSlide >
-                <Eventcard
+            </SwiperSlide>
+            <SwiperSlide>
+              <Eventcard
                 img="/../public/images/Image (1).png"
                 title="Migrating to Linear 101"
                 author="Phoenix Baker "
@@ -86,11 +82,10 @@ const Event = () => {
                 desc="{
                   Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.
                 "
-                
               />
-                </SwiperSlide>
-                <SwiperSlide >
-                <Eventcard
+            </SwiperSlide>
+            <SwiperSlide>
+              <Eventcard
                 img="/../public/images/Image (2).png"
                 title="Building your API Stack"
                 author="Lana Steiner  "
@@ -98,26 +93,29 @@ const Event = () => {
                 desc="{
                   The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
                 "
-                
               />
-                </SwiperSlide>
-  
-
+            </SwiperSlide>
           </div>
         </Swiper>
         <div className="button">
-            <div className="button flex  text-[#667085] gap-8 text-2xl my-10">
-              <button className="left cursor-pointer border border-[#EAECF0] h-10 w-10 rounded-full p-1 " ref={prevRef}>
-                <BsArrowLeft />
-              </button>
-              <button className="right cursor-pointer border border-[#EAECF0] h-10 w-10 rounded-full p-1" ref={nextRef}>
-                <BsArrowRight />
-              </button>
-            </div>
+          <div className="button flex  text-[#667085] gap-8 text-2xl my-10">
+            <button
+              className="left cursor-pointer border border-[#EAECF0] h-10 w-10 rounded-full p-1 "
+              ref={prevRef}
+            >
+              <BsArrowLeft />
+            </button>
+            <button
+              className="right cursor-pointer border border-[#EAECF0] h-10 w-10 rounded-full p-1"
+              ref={nextRef}
+            >
+              <BsArrowRight />
+            </button>
           </div>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Event
+export default Event;
