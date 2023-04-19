@@ -4,6 +4,7 @@ import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Mission from "@/components/Mission";
 import Slider from "@/components/Slider";
+import Counter from "@/components/Counter";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Navbar />
       <Slider />
       <Mission />
+      <Counter />
     </>
   );
 }

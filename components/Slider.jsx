@@ -13,7 +13,7 @@ const Slider = () => {
   const nextRef = useRef(null);
   return (
     <>
-      <div className="mainContainer border border-black  relative">
+      <div className="mainContainer relative">
         <Swiper
           onBeforeInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
@@ -62,7 +62,7 @@ const Slider = () => {
                   alt="Image here"
                   className="image w-full h-full"
                 />
-                <div className="absolute border flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] bg-[#000] opacity-60 h-[209px] w-[896px] z-40 px-4"></div>
+                <div className="absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] bg-[#000] opacity-60 h-[209px] w-[896px] z-40 px-4"></div>
                 <div className="data absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] opacity-100 text-white  h-[209px] w-[896px] z-40 px-4 gap-4">
                   <h2 className="text-[#DD0C39] font-inter font-[500] text-[22px] z-50 opacity-100">
                     {" "}
@@ -83,7 +83,7 @@ const Slider = () => {
                   alt="Image here"
                   className="image w-full h-full"
                 />
-                <div className="absolute border flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] bg-[#000] opacity-60 h-[209px] w-[896px] z-40 px-4"></div>
+                <div className="absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] bg-[#000] opacity-60 h-[209px] w-[896px] z-40 px-4"></div>
                 <div className="data absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] opacity-100 text-white  h-[209px] w-[896px] z-40 px-4 gap-4">
                   <h2 className="text-[#DD0C39] font-inter font-[500] text-[22px] z-50 opacity-100">
                     {" "}
@@ -104,7 +104,7 @@ const Slider = () => {
                   alt="Image here"
                   className="image w-full h-full"
                 />
-                <div className="absolute border flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] bg-[#000] opacity-60 h-[209px] w-[896px] z-40 px-4"></div>
+                <div className="absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] bg-[#000] opacity-60 h-[209px] w-[896px] z-40 px-4"></div>
                 <div className="data absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] opacity-100 text-white  h-[209px] w-[896px] z-40 px-4 gap-4">
                   <h2 className="text-[#DD0C39] font-inter font-[500] text-[22px] z-50 opacity-100">
                     {" "}
