@@ -6,7 +6,7 @@ const Mission = () => {
             <div>
                 <p className='text-[#101828] text-xl font-bold w-[500px] mx-auto'>Empowering Nepal’s software and IT industry to be globally recognized through continuous innovation, entrepreneurship, excellence, and excellence in technology.</p>
             </div>
-            <div className='container grid grid-cols-3 px-10 gap-5 justify-center mx-auto align-middle text-center'>
+            <div className='container grid grid-cols-3 px-10 gap-5 justify-center mx-auto align-middle text-center my-5'>
                 <div className="w-[350px] ">
                     <div className='bg-[#DD0C39] rounded-full w-[30px] h-[30px] p-2 mx-auto align-middle text-center flex justify-center items-center'>
                         <svg width="20" height="16" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
