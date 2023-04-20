@@ -57,7 +57,7 @@ const Slider = () => {
                   height={400}
                   width={1440}
                   alt="Image here"
-                  className="image w-full h-full"
+                  className="image w-auto object-cover md:w-full h-full"
                 />
                 <div className="absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[20px] lg:left-[103px] bg-[#000] opacity-60 h-[209px] w-[82%] lg:w-[896px] z-40 px-4 border-2 border-white"></div>
                 <div className="data absolute flex capitalize flex-col justify-center items-start bottom-[103px] left-[20px] lg:left-[103px] opacity-100 text-white h-[209px] w-[82%] lg:w-[896px] z-40 px-4 gap-4">
@@ -78,7 +78,7 @@ const Slider = () => {
                   height={400}
                   width={1440}
                   alt="Image here"
-                  className="image w-full h-full"
+                  className="image w-auto object-cover md:w-full h-full"
                 />
                 <div className="absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[20px] lg:left-[103px] bg-[#000] opacity-60 h-[209px] w-[82%] lg:w-[896px] z-40 px-4 border-2 border-white"></div>
                 <div className="data absolute flex capitalize flex-col justify-center items-start bottom-[103px] left-[20px] lg:left-[103px] opacity-100 text-white h-[209px] w-[82%] lg:w-[896px] z-40 px-4 gap-4">
