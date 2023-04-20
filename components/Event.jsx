@@ -12,7 +12,7 @@ const Event = () => {
   const nextRef = useRef(null);
   return (
     <div>
-      <div className="px-[20px]  xl:px-[142px] py-[60px] ">
+      <div className="px-[20px] xl:px-[142px] py-[60px] ">
         <div className="header flex justify-between items-center">
           <div className="text-2xl md:text-3xl flex justify-start flex-col items-start mb-6">
             <div className="mb-3">
@@ -40,7 +40,7 @@ const Event = () => {
           breakpoints={{
             0: {
               slidesPerView: 1,
-              spaceBetween: 10,
+              spaceBetween: 30,
             },
             768: {
               slidesPerView: 2,
@@ -98,15 +98,15 @@ const Event = () => {
           </div>
         </Swiper>
         <div className="button">
-          <div className="button flex  text-[#667085] gap-8 text-2xl my-10">
+          <div className="button flex items-center text-[#667085] gap-8 text-2xl my-10">
             <button
-              className="left cursor-pointer border border-[#EAECF0] h-10 w-10 rounded-full p-1 "
+              className="left hover:bg-slate-200 hover:text-black cursor-pointer border border-[#EAECF0] h-10 w-10 rounded-full p-2"
               ref={prevRef}
             >
               <BsArrowLeft />
             </button>
             <button
-              className="right cursor-pointer border border-[#EAECF0] h-10 w-10 rounded-full p-1"
+              className="right hover:bg-slate-200 hover:text-black cursor-pointer border border-[#EAECF0] h-10 w-10 rounded-full p-2"
               ref={nextRef}
             >
               <BsArrowRight />

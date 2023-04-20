@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Eventcard = ({ img, title, author, desc, date }) => {
   return (
-    <div className="card cursor-pointer font-inter col-span-6 lg:col-span-4 min-w-[300px] flex flex-col items-center justify-center">
-      <div className="cardHeader ">
+    <div className="card cursor-pointer font-inter col-span-6 lg:col-span-4 w-full flex flex-col items-center justify-center px-2">
+      <div className="cardHeader w-full">
         <div className="imageDiv col-span-2">
           <Link href={`/`}>
             <Image src={img} alt="Blog image here." width={384} height={240} />
@@ -18,9 +18,8 @@ const Eventcard = ({ img, title, author, desc, date }) => {
               <span className="font-bold">.</span>
               {date}
             </p>
-            <p></p>
           </div>
-          <div className="flex justify-between ">
+          <div className="flex justify-between w-[90%] items-center">
             <Link href={`/`}>
               <h2 className="font-bold hover:underline font-mavenPro text-[20px] mb-2">
                 {title}
@@ -47,7 +46,7 @@ const Eventcard = ({ img, title, author, desc, date }) => {
         </div>
       </div>
 
-      <div className="text-base  w-[350px]">{desc}</div>
+      <div className="text-base  w-full">{desc}</div>
     </div>
   );
 };

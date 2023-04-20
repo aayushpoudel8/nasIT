@@ -33,7 +33,7 @@ const Counter = () => {
     <>
       <div
         ref={sectionRef}
-        className="counter mb-8 grid sm:grid-cols-6  md:grid-cols-12 grid-cols-3 gap-5 md:gap-3 bg-[#03286B] text-white px-[100px] py-[72px] w-full h-auto font-inter border border-black"
+        className="counter mb-8 grid sm:grid-cols-6  md:grid-cols-12 grid-cols-3 gap-5 md:gap-3 bg-[#03286B] text-white px-[40px] lg:px-[100px] py-[72px] w-full h-auto font-inter border border-black"
       >
         <div className="item col-span-3 text-center">
           <p className="text-[60px] font-[600]">

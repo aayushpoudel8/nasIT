@@ -2,28 +2,31 @@ import React from "react";
 import Link from "next/link";
 import { AiOutlineTwitter, AiFillLinkedin } from "react-icons/Ai";
 import { BsFacebook } from "react-icons/Bs";
+
 const Footer = () => {
   return (
-    <div className="text-white bg-[#03286B] pt-[64px] pb-[48px] px-[100px] ">
+    <div className="text-white bg-[#03286B] pt-[64px] pb-[48px] px-[10px] lg:px-[100px] ">
       <div className="firstcontainer flex justify-between p-3  flex-wrap">
-        <div>
+        <div className="mb-4">
           <h3 className="text-3xl font-bold pb-2">NAS-IT</h3>
           <p>Nepal Association of Software Services and IT Companies </p>
         </div>
         <div className="">
           <Link href={"/"}>
-            <button className="bg-[#D0D5DD] text-[#344054] p-2">
+            <button className="bg-[#D0D5DD] text-[#344054] p-2 rounded-sm cursor-pointer">
               Contact Us
             </button>
           </Link>
           <Link href={"/"}>
-            <button className=" ml-5 bg-[#DD0C39] p-2">Become a Member</button>
+            <button className=" ml-5 bg-[#DD0C39] p-2 rounded-sm cursor-pointer">
+              Become a Member
+            </button>
           </Link>
         </div>
       </div>
       <div className="border border-[#475467] h-0 w-full"></div>
-      <div className="secondcontainer  flex justify-between pt-4 pb-5 flex-wrap">
-        <div className="mt-4">
+      <div className="secondcontainer flex justify-between sm:justify-between  md:justify-between pt-4 pb-5 flex-wrap gap-4 lg:gap-6">
+        <div className="mt-4 w-full lg:w-[20%]">
           <svg
             width="261"
             height="49"
@@ -44,21 +47,31 @@ const Footer = () => {
           </svg>
         </div>
         <div>
-          <ul className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-5">
-            <li className="px-8 py-2">About</li>
-            <li className="px-8 py-2">Members</li>
-            <li className="px-8 py-2">Resources</li>
-            <li className="px-8 py-2">Events</li>
-            <li className="px-8 py-2">Collaborations</li>
-            <li className="px-8 py-2">Home</li>
-            <li className="px-8 py-2">Partnership</li>
-            <li className="px-8 py-2">Legal</li>
-            <li className="px-8 py-2">News</li>
-          </ul>
+          <div className="grid grid-cols-2 sm:grid-cols-8 md:grid-cols-10 w-full lg:w-full">
+            <ul className="col-span-2 sm:grid-cols-2 md:grid-cols-2">
+              <li className="px-8 md:px-8 py-2">About</li>
+              <li className="px-8 md:px-8 py-2">Members</li>
+            </ul>
+            <ul className="col-span-2 sm:grid-cols-2 md:grid-cols-2">
+              <li className="px-8 md:px-8 py-2">Resources</li>
+              <li className="px-8 md:px-8 py-2">Events</li>
+            </ul>
+            <ul className="col-span-2 sm:grid-cols-2 md:grid-cols-2">
+              <li className="px-8 md:px-8 py-2">Collaborations</li>
+              <li className="px-8 md:px-8 py-2">Home</li>
+            </ul>
+            <ul className="col-span-2 sm:grid-cols-2 md:grid-cols-2">
+              <li className="px-8 md:px-8 py-2">Partnership</li>
+              <li className="px-8 md:px-8 py-2">Legal</li>
+            </ul>
+            <ul className="col-span-2 sm:grid-cols-2 md:grid-cols-2">
+              <li className="px-8 md:px-8 py-2">News</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="border border-[#475467] h-0 w-full"></div>
-      <div className="text-[#98A2B3] pt-5 flex justify-between flex-wrap">
+      <div className="text-[#98A2B3] pt-5 px-8 flex justify-center sm:justify-between flex-wrap gap-4 text-center">
         <div>
           <p>© 2023 NAS-IT. All rights reserved.</p>
         </div>

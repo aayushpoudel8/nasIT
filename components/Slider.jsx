@@ -26,30 +26,6 @@ const Slider = () => {
             prevEl: prevRef.current,
             nextEl: nextRef.current,
           }}
-          // pagination={{ clickable: true }}
-          // scrollbar={{ draggable: true }}
-          // breakpoints={{
-          //   0: {
-          //     slidesPerView: 1,
-          //     spaceBetween: 10,
-          //   },
-          //   768: {
-          //     slidesPerView: 1,
-          //     spaceBetween: 18,
-          //   },
-          //   1024: {
-          //     slidesPerView: 1,
-          //     spaceBetween: 20,
-          //   },
-          //   1280: {
-          //     slidesPerView: 1,
-          //     spaceBetween: 20,
-          //   },
-          //   1536: {
-          //     slidesPerView: 1,
-          //     spaceBetween: 30,
-          //   },
-          // }}
           modules={[Navigation]}
         >
           <div className="slideImage relative z-10 h-[650px] w-full">
@@ -60,15 +36,15 @@ const Slider = () => {
                   height={400}
                   width={1440}
                   alt="Image here"
-                  className="image w-full h-full"
+                  className="image w-auto object-cover md:w-full h-full"
                 />
-                <div className="absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] bg-[#000] opacity-60 h-[209px] w-[896px] z-40 px-4"></div>
-                <div className="data absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] opacity-100 text-white  h-[209px] w-[896px] z-40 px-4 gap-4">
-                  <h2 className="text-[#DD0C39] font-inter font-[500] text-[22px] z-50 opacity-100">
+                <div className="absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[20px] lg:left-[103px] bg-[#000] opacity-60 h-[209px] w-[82%] lg:w-[896px] z-40 px-4 border-2 border-white"></div>
+                <div className="data absolute flex capitalize flex-col justify-center items-start bottom-[103px] left-[20px] lg:left-[103px] opacity-100 text-white h-[209px] w-[82%] lg:w-[896px] z-40 px-4 gap-4">
+                  <h2 className="text-[#DD0C39] font-inter font-[500] text-[16px] lg:text-[22px] z-50 opacity-100">
                     {" "}
                     Learn About The Upcoming Events
                   </h2>
-                  <p className="text-white text-[38px]">
+                  <p className="text-white text-[24px] lg:text-[38px]">
                     NAS-IT - INNOVATE NEPAL HACKATHON
                   </p>
                 </div>
@@ -83,13 +59,13 @@ const Slider = () => {
                   alt="Image here"
                   className="image w-full h-full"
                 />
-                <div className="absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] bg-[#000] opacity-60 h-[209px] w-[896px] z-40 px-4"></div>
-                <div className="data absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] opacity-100 text-white  h-[209px] w-[896px] z-40 px-4 gap-4">
-                  <h2 className="text-[#DD0C39] font-inter font-[500] text-[22px] z-50 opacity-100">
+                <div className="absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[20px] lg:left-[103px] bg-[#000] opacity-60 h-[209px] w-[82%] lg:w-[896px] z-40 px-4 border-2 border-white"></div>
+                <div className="data absolute flex capitalize flex-col justify-center items-start bottom-[103px] left-[20px] lg:left-[103px] opacity-100 text-white h-[209px] w-[82%] lg:w-[896px] z-40 px-4 gap-4">
+                  <h2 className="text-[#DD0C39] font-inter font-[500] text-[16px] lg:text-[22px] z-50 opacity-100">
                     {" "}
                     Learn About The Upcoming Events
                   </h2>
-                  <p className="text-white text-[38px]">
+                  <p className="text-white text-[24px] lg:text-[38px]">
                     NAS-IT - INNOVATE NEPAL HACKATHON
                   </p>
                 </div>
@@ -104,13 +80,13 @@ const Slider = () => {
                   alt="Image here"
                   className="image w-full h-full"
                 />
-                <div className="absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] bg-[#000] opacity-60 h-[209px] w-[896px] z-40 px-4"></div>
-                <div className="data absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[103px] opacity-100 text-white  h-[209px] w-[896px] z-40 px-4 gap-4">
-                  <h2 className="text-[#DD0C39] font-inter font-[500] text-[22px] z-50 opacity-100">
+                <div className="absolute flex capitalize  flex-col justify-center items-start bottom-[103px] left-[20px] lg:left-[103px] bg-[#000] opacity-60 h-[209px] w-[82%] lg:w-[896px] z-40 px-4 border-2 border-white"></div>
+                <div className="data absolute flex capitalize flex-col justify-center items-start bottom-[103px] left-[20px] lg:left-[103px] opacity-100 text-white h-[209px] w-[82%] lg:w-[896px] z-40 px-4 gap-4">
+                  <h2 className="text-[#DD0C39] font-inter font-[500] text-[16px] lg:text-[22px] z-50 opacity-100">
                     {" "}
                     Learn About The Upcoming Events
                   </h2>
-                  <p className="text-white text-[38px]">
+                  <p className="text-white text-[24px] lg:text-[38px]">
                     NAS-IT - INNOVATE NEPAL HACKATHON
                   </p>
                 </div>
@@ -119,7 +95,7 @@ const Slider = () => {
           </div>
         </Swiper>
 
-        <div className="sliderButton absolute bottom-[90px] left-[103px] flex justify-center gap-3 items-center z-20">
+        <div className="sliderButton absolute bottom-[90px] left-[20px] lg:left-[103px] flex justify-center gap-3 items-center z-20">
           <div
             ref={prevRef}
             className="left cursor-pointer text-[#667085] border-2 rounded-full p-4 bg-[#EAECF0]"

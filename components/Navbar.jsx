@@ -6,7 +6,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   return (
     <>
-      <header className="bg-white w-full h-auto fixed top-11 z-50 left-0 py-2 flex justify-between px-4 lg:px-12 items-center font-dmSans font-[500] text-black text-[16px] lg:text-[18px]">
+      <header className="bg-white w-full h-auto fixed top-11 z-50 left-0 py-2 flex justify-between px-4 lg:px-12 items-center font-dmSans font-[500] text-black text-[16px] lg:text-[18px] shadow-lg shadow-gray-700/50">
         <div className="logo">
           <svg
             width="220"
@@ -51,7 +51,7 @@ const Navbar = () => {
           >
             {nav ? <AiOutlineClose /> : <GiHamburgerMenu />}
           </div>
-          <ul className="hidden lg:flex xl:gap-2">
+          <ul className="hidden  lg:flex xl:gap-2">
             <li className="list-items">About</li>
             <li className="list-items">Members</li>
             <li className="list-items">Events</li>
@@ -63,7 +63,7 @@ const Navbar = () => {
           </ul>
 
           {nav && (
-            <ul className="flex flex-col py-8 px-8 text-xl border-t border-gray-400 font-dmSans lg:hidden gap-6 cursor-pointer h-auto w-full bg-white absolute top-[74px] left-0">
+            <ul className="flex shadow-lg shadow-gray-700/50 flex-col py-8 px-8 text-xl border-t border-gray-400 font-dmSans lg:hidden gap-6 cursor-pointer h-auto w-full bg-white absolute top-[74px] left-0">
               <li className="list-items hover:bg-blue-900/80 hover:text-white py-2 px-8 rounded-sm">
                 About
               </li>
