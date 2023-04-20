@@ -5,7 +5,7 @@ import { BsFacebook } from "react-icons/Bs";
 const Footer = () => {
   return (
     <div className="text-white bg-[#03286B] pt-[64px] pb-[48px] px-[100px] ">
-      <div className="firstcontainer flex justify-between p-3">
+      <div className="firstcontainer flex justify-between p-3  flex-wrap">
         <div>
           <h3 className="text-3xl font-bold pb-2">NAS-IT</h3>
           <p>Nepal Association of Software Services and IT Companies </p>
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border border-[#475467] h-0 w-full"></div>
-      <div className="secondcontainer  flex justify-between pt-4 pb-5">
+      <div className="secondcontainer  flex justify-between pt-4 pb-5 flex-wrap">
         <div className="mt-4">
           <svg
             width="261"
@@ -44,7 +44,7 @@ const Footer = () => {
           </svg>
         </div>
         <div>
-          <ul className="grid grid-cols-5">
+          <ul className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-5">
             <li className="px-8 py-2">About</li>
             <li className="px-8 py-2">Members</li>
             <li className="px-8 py-2">Resources</li>
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border border-[#475467] h-0 w-full"></div>
-      <div className="text-[#98A2B3] pt-5 flex justify-between">
+      <div className="text-[#98A2B3] pt-5 flex justify-between flex-wrap">
         <div>
           <p>© 2023 NAS-IT. All rights reserved.</p>
         </div>

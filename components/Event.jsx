@@ -61,7 +61,7 @@ const Event = () => {
           }}
           modules={[Navigation]}
         >
-          <div className="blogcontent grid grid-cols-12 gap-6">
+          <div className="blogcontent grid grid-cols-6 lg:grid-cols-12 gap-6">
             <SwiperSlide>
               <Eventcard
                 img="/../public/images/Image.png"

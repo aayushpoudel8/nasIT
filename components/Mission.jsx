@@ -8,14 +8,14 @@ const Mission = () => {
         </h3>
       </div>
       <div>
-        <p className="text-[#101828] text-[28px] font-[600] text-center mb-8 w-[768px] mx-auto">
+        <p className="text-[#101828] text-[20px] md:text-[28px] font-[600] text-center mb-8 w-full px-4 md:w-[768px] mx-auto ">
           Empowering Nepal’s software and IT industry to be globally recognized
           through continuous innovation, entrepreneurship, excellence, and
           excellence in technology.
         </p>
       </div>
-      <div className="container mt-6 font-inter grid grid-cols-12 mb-9 px-10 gap-10 justify-center mx-auto align-middle text-center">
-        <div className="col-span-4 ">
+      <div className="container mt-6 font-inter grid  grid-cols-6 md:grid-cols-12 mb-9 px-4 md:px-10 gap-8 md:gap-10 justify-center mx-auto align-middle text-center">
+        <div className="col-span-6 md:col-span-6 xl:col-span-4 items-center">
           <div className="bg-[#DD0C39] rounded-full w-[48px] h-[48px] p-3 mx-auto align-middle text-center flex justify-center items-center mb-4 border-4 ">
             <svg
               width="20"
@@ -50,7 +50,7 @@ const Mission = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-4 items-center">
+        <div className="col-span-6 md:col-span-6 xl:col-span-4 items-center">
           <div className="bg-[#DD0C39] rounded-full w-[48px] h-[48px] p-3 mx-auto align-middle text-center flex justify-center items-center mb-4 border-4  ">
             <svg
               width="22"
@@ -78,7 +78,7 @@ const Mission = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-4 items-center">
+        <div className="col-span-6 md:col-span-6 xl:col-span-4 items-center">
           <div className="bg-[#DD0C39] rounded-full w-[48px] h-[48px] p-3 mx-auto align-middle text-center flex justify-center items-center mb-4 border-4 ">
             <svg
               width="24"
@@ -106,7 +106,7 @@ const Mission = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-4 items-center">
+        <div className="col-span-6 md:col-span-6 xl:col-span-4 items-center">
           <div className="bg-[#DD0C39] rounded-full w-[48px] h-[48px] p-3 mx-auto align-middle text-center flex justify-center items-center mb-4 border-4 ">
             <svg
               width="24"
@@ -135,7 +135,7 @@ const Mission = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-4 items-center">
+        <div className="col-span-6 md:col-span-6 xl:col-span-4 items-center">
           <div className="bg-[#DD0C39] rounded-full w-[48px] h-[48px] p-3 mx-auto align-middle text-center flex justify-center items-center mb-4 border-4 ">
             <svg
               width="24"
@@ -163,7 +163,7 @@ const Mission = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-4 items-center">
+        <div className="col-span-6 md:col-span-6 xl:col-span-4 items-center">
           <div className="bg-[#DD0C39] rounded-full w-[48px] h-[48px] p-3 mx-auto align-middle text-center flex justify-center items-center mb-4 border-4">
             <svg
               width="20"
