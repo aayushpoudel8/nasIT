@@ -5,9 +5,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   return (
-    <div className="bg-white h-auto border py-2 fixed top-11 z-50 left-0 w-full">
-      <div className="flex px-10 justify-between">
-        <div className="flex justify-between gap-10 items-center w-full">
+    <>
+      <header className="bg-white w-full h-auto fixed top-11 z-50 left-0 py-2 flex justify-between px-4 lg:px-12 items-center font-dmSans font-[500] text-black text-[16px] lg:text-[18px]">
+        <div className="logo">
           <svg
             width="220"
             height="58"
@@ -39,40 +39,54 @@ const Navbar = () => {
               </linearGradient>
             </defs>
           </svg>
+        </div>
 
-          <ul
-            className={`nav fixed top-0 left-0  lg:z-50 lg:static lg:flex w-full font-mavenPro lg:justify-end text-black font-inter xl:text-base font-[400] lg:font-bold py-0 text-lg  lg:text-sm transition-all duration-300 transform bg-white -translate-x-full lg:translate-x-0 ${
-              nav
-                ? "-translate-x-0 h-[130vh] lg:h-[50px] z-50 lg:z-50 lg:flex-row flex-col lg:justify-end justify-start items-start space-y-10 lg:items-center gap-10 py-8 lg:py-0 lg:px-0 lg:w-full px-8 text-lg lg:gap-5"
-                : "translate-x-[200vw]"
-            }`}
-            // md:flex w-full gap-5 xl:gap-5 sm:gap-2 justify-end items-center
-          >
+        <nav>
+          {/* mobile nav toggle button */}
           <div
-            onClick={() => setNav(false)}
-            className="absolute top-5 right-5 z-50 lg:hidden"
+            className="hamburger transition-all duration-300 cursor-pointer lg:hidden py-2 px-2 bg-blue-900/90 rounded-md text-white text-2xl"
+            onClick={() => {
+              setNav(!nav);
+            }}
           >
-            <AiOutlineClose />
+            {nav ? <AiOutlineClose /> : <GiHamburgerMenu />}
           </div>
-            <li className="px-2 lg:px-4">About</li>
-            <li className="px-2 lg:px-4">Members</li>
-            <li className="px-2 lg:px-4">Events</li>
-            <li className="px-2 lg:px-4">Impact</li>
-            <li className="px-2 lg:px-4">Contact</li>
-            <li className="px-2 lg:px-4 text-[#DD0C39]">Become a Member</li>
+          <ul className="hidden lg:flex xl:gap-2">
+            <li className="list-items">About</li>
+            <li className="list-items">Members</li>
+            <li className="list-items">Events</li>
+            <li className="list-items">Impact </li>
+            <li className="list-items">Contact</li>
+            <li className="list-items font-[700] text-[#DD0C39]">
+              Become a Member
+            </li>
           </ul>
-        </div>
-        <div
-          onClick={() => {
-            console.log(nav);
-            setNav(true);
-          }}
-          className="hamburger cursor-pointer lg:hidden flex justify-center items-center"
-        >
-          <GiHamburgerMenu />
-        </div>
-      </div>
-    </div>
+
+          {nav && (
+            <ul className="flex flex-col py-8 px-8 text-xl border-t border-gray-400 font-dmSans lg:hidden gap-6 cursor-pointer h-auto w-full bg-white absolute top-[74px] left-0">
+              <li className="list-items hover:bg-blue-900/80 hover:text-white py-2 px-8 rounded-sm">
+                About
+              </li>
+              <li className="list-items hover:bg-blue-900/80 hover:text-white py-2 px-8 rounded-sm">
+                Members
+              </li>
+              <li className="list-items hover:bg-blue-900/80 hover:text-white py-2 px-8 rounded-sm">
+                Events
+              </li>
+              <li className="list-items hover:bg-blue-900/80 hover:text-white py-2 px-8 rounded-sm">
+                Impact{" "}
+              </li>
+              <li className="list-items hover:bg-blue-900/80 hover:text-white py-2 px-8 rounded-sm">
+                Contact
+              </li>
+              <li className="list-items hover:bg-blue-900/80 hover:text-white py-2 px-8 rounded-sm font-[700] text-[#DD0C39]">
+                Become a Member
+              </li>
+            </ul>
+          )}
+        </nav>
+      </header>
+    </>
   );
 };
 

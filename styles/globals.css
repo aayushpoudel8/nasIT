@@ -6,6 +6,12 @@
 @tailwind utilities;
 
 
+@layer components{
+  .list-items{
+    @apply cursor-pointer transition-all duration-300 xl:px-6 lg:px-4 hover:text-blue-900
+  }
+}
+
 
 .swiper {
   width: 100%;
