@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Eventcard = ({ img, title, author, desc, date }) => {
   return (
-    <div className="card cursor-pointer font-inter">
+    <div className="card cursor-pointer font-inter col-span-6 lg:col-span-4 min-w-[300px] flex flex-col items-center justify-center">
       <div className="cardHeader ">
         <div className="imageDiv col-span-2">
           <Link href={`/`}>
@@ -47,7 +47,7 @@ const Eventcard = ({ img, title, author, desc, date }) => {
         </div>
       </div>
 
-      <div className="text-base 2xl:text-base">{desc}</div>
+      <div className="text-base  w-[350px]">{desc}</div>
     </div>
   );
 };

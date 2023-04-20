@@ -287,11 +287,6 @@ countup.js@^2.5.0:
   resolved "https://registry.yarnpkg.com/countup.js/-/countup.js-2.6.0.tgz#db25f37653c5ee996b4dfa03d1ab2f430c903fd1"
   integrity sha512-GeORCrCcaFUHP3RNf0/dWK+XQX+fsdtrMO31mNvsbKXNNG+DMTcgZ4dWpIG9BnOS8t5+iJbaRXgaaG9oLs0N4g==
 
-countup@^1.8.2:
-  version "1.8.2"
-  resolved "https://registry.yarnpkg.com/countup/-/countup-1.8.2.tgz#021ccc6a6f964540c6b27ed64681af27fb55f010"
-  integrity sha512-1qOuy+h+dgLY4TroLb4ZC2hK7HYS2Z7mnSUvdzoYAU7EZbqOse1mKZta/KYPhDPfd9lPDyP3Tb4pH6a10RkoCw==
-
 cssesc@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
