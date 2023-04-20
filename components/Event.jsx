@@ -68,7 +68,7 @@ const Event = () => {
                 title="UX review presentations"
                 author="Olivia Rhye "
                 date=" 20 Jan 2022"
-                desc="{
+                desc="
                   How do you create compelling presentations that wow your colleagues and impress your managers?
                 "
               />
@@ -79,7 +79,7 @@ const Event = () => {
                 title="Migrating to Linear 101"
                 author="Phoenix Baker "
                 date="  19 Jan 2022"
-                desc="{
+                desc="
                   Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.
                 "
               />
@@ -90,7 +90,7 @@ const Event = () => {
                 title="Building your API Stack"
                 author="Lana Steiner  "
                 date="  18 Jan 2022"
-                desc="{
+                desc="
                   The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
                 "
               />
