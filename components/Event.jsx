@@ -80,7 +80,7 @@ const Event = () => {
                 author="Phoenix Baker "
                 date="  19 Jan 2022"
                 desc="
-                  Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.
+                  Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.
                 "
               />
             </SwiperSlide>
